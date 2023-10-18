@@ -1,0 +1,29 @@
+{% extends 'base.html' %} {% block content %}
+
+<h1>History</h1>
+<br />
+{% if code %} {% for thing in code %}
+<h6>Question : {{ thing.question }}</h6>
+<br />
+<h6>Result:</h6>
+<pre>
+    <code class=" line-numbers language-{{ thing.language }}">
+        {{ thing.code_answer }}
+        
+    </code>
+</pre>
+<a
+  href="{% url 'delete_history' thing.id%}"
+  class="btn btn-outline-danger"
+  style="
+    --bs-btn-padding-y: 0.25rem;
+    --bs-btn-padding-x: 0.5rem;
+    --bs-btn-font-size: 0.75rem;
+  "
+  >Delete</a
+>
+
+<br /><br />
+<br />
+
+{% endfor %} {% endif %} {% endblock %}
