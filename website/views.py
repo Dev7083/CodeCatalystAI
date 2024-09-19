@@ -26,7 +26,7 @@ def home(request):
         else:
             # OpenAI Key
             # openai.api_key = "***************ENTER YOURS OPENAI API KEY***************"
-            openai.api_key = "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"
+            openai.api_key = ""
             # Create OpenAI Instance
             openai.Model.list()
             # Make an OpenAI Request
