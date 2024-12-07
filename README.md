@@ -7,13 +7,22 @@
 
 ## Features :
 
-- Fix Code
-- Code Completion/ Code Generation
+- Fix Code.
+- Code Completion/ Code Generation.
 - This project uses Gemini to generate & fix code.
 
 ## Live at - "NOT DEPLOYED YET 😢"
 
-## Run Locally
+## Preview:-
+
+<img src="./assets/CodeCatalystAI_demo.gif" width="600" />
+
+- Mobile Device :-
+
+  <img src="./assets/mobile.png" width="200" />
+  <img src="./assets/register.png" width="200" />
+
+## Run Locally:-
 
 #### Clone the project
 
@@ -29,29 +38,36 @@
 
 ### Create Virtual Environment & Activate Virtual Environment
 
-- Install Virtualenv
+- Install Virtualenv:
+
   ```bash
   pip install virtualenv
   ```
 
-- Create virtual environment
+- Create virtual environment:
+
   ```
   virtualenv env
   ```
-- In Command Prompt
+
+- In Command Prompt:
+
   ```cmd
   cd env
   Scripts/activate
   ```
-- In Bash/Linux
+
+- In Bash/Linux:
+
   ```bash
   source env/Scripts/activate
   ```
 
 ### Install Required Modules from requirements.txt file
-    ```
-    pip install -r "requirements.txt"
-    ```
+
+```bash
+pip install -r "requirements.txt"
+```
 
 ### Update GOOGLE GEMINI API KEY in a ".env" file in "codebot" folder.
 
@@ -61,7 +77,7 @@
   GOOGLE_GENERATIVE_AI_API_KEY="YOUR_API_KEY"
   ```
 
-## Start the Server :
+## Start the Server 🖥️:
 
 - from the root folder
 
@@ -69,7 +85,7 @@
 python manage.py runserver
 ```
 
-## Tech Stack
+## Tech Stack:
 
 - **Framework:** Django
 - **UI:** Bootstrap
@@ -79,7 +95,7 @@ python manage.py runserver
 
 ---
 
-## Project Tree
+## Project Tree:
 
 ```
 CodeCatalyst AI
