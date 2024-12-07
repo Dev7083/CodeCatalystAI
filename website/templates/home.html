@@ -25,7 +25,13 @@
       placeholder="Have AI fix my Code."
       rows="3"
     >
-      {{ code }}</textarea
+      <pre>  
+        <code class=" line-numbers language-{{ lang }}">
+          {{ code }}
+    
+        </code>
+      </pre>   
+    </textarea
     >
     <br />
     <select class="form-select" name="lang">
