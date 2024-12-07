@@ -15,4 +15,5 @@ os.environ.setdefault("DJANGO_SETTINGS_MODULE", "codebot.settings")
 
 application = get_wsgi_application()
 
+# for vercel
 app = application
